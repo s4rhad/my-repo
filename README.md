@@ -31,7 +31,7 @@ git checkout -b "$BRANCH"
 
 # ensure README.md exists and append/update a timestamp line
 README="README.md"
-if ! [[ -f "$README" ]]; then
+if ! [[ -f "$README" ]]; 
   echo "# Repository" > "$README"
 fi
 
