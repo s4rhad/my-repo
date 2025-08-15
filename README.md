@@ -22,7 +22,7 @@ cd "$TMPDIR"
 
 # clone (shallow)
 git clone --depth 1 "$REPO_URL" repo
-cd r
+cd repo
 
 # create new branch
 TS="$(date -u +"%Y%m%dT%H%M%SZ")"
