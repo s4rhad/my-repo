@@ -49,7 +49,7 @@ git commit -m "$COMMIT_MSG"
 # push branch (assumes you have push rights and credential method configured)
 git push -u origin "$BRANCH"
 
-echo "Pushed branch: $BR
+echo "Pushed 
 echo "Repo: $REPO_URL"
 
 
