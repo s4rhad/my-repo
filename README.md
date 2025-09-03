@@ -4,7 +4,7 @@
 set -euo pipefail
 
 REPO_URL="${1:-}"
-if [[ -z "$REPO_URL" ]]; then
+if [[ -z "$REPO_URL" ]]; th
   echo "Usage: $0 <git-repo-url>"
   exit 2
 fi
