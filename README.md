@@ -7,7 +7,7 @@ REPO_URL="${1:-}"
 if [[ -z "$REPO_URL" ]]; then
   echo "Usage: $0 <git-repo-url>"
   exit 2
-fi
+
 
 # configurable
 BRANCH_PREFIX="auto-update"
