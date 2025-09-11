@@ -29,7 +29,7 @@ TS="$(date -u +"%Y%m%dT%H%M%SZ")"
 BRANCH="${BRANCH_PREFIX}/${TS}"
 git checkout -b "$BRANCH"
 
-
+# ensure README.md exists and append/update a timestamp line
 README="README.md"
 if ! [[ -f "$README" ]]; then
   echo "# Repository" > "$README"
