@@ -46,7 +46,7 @@ fi
 git add "$README"
 git commit -m "$COMMIT_MSG"
 
-# push bra
+# 
 git push -u origin "$BRANCH"
 
 echo "Pushed branch: $BRANCH"
