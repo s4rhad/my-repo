@@ -20,7 +20,7 @@ trap cleanup EXIT
 
 cd "$TMPDIR"
 
-# 
+# clone (shallow)
 git clone --depth 1 "$REPO_URL" repo
 cd repo
 
