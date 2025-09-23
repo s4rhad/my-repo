@@ -15,7 +15,7 @@ COMMIT_MSG="chore: automatic README timestamp update"
 
 # work in a temp dir
 TMPDIR="$(mktemp -d)"
-cleanup() { rm -rf
+cleanup() 
 trap cleanup EXIT
 
 cd "$TMPDIR"
