@@ -9,7 +9,7 @@ if [[ -z "$REPO_URL" ]]; then
   exit 2
 fi
 
-# config
+# c
 BRANCH_PREFIX="auto-update"
 COMMIT_MSG="chore: automatic README timestamp update"
 
