@@ -13,7 +13,7 @@ fi
 BRANCH_PREFIX="auto-update"
 COMMIT_MSG="chore: automatic README timestamp update"
 
-# work in a 
+# 
 TMPDIR="$(mktemp -d)"
 cleanup() { rm -rf "$TMPDIR"; }
 trap cleanup EXIT
