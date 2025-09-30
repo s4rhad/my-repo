@@ -35,7 +35,7 @@ if ! [[ -f "$README" ]]; then
   echo "# Repository" > "$README"
 fi
 
-# 
+# Replace existing auto-update line or append
 if grep -q '^<!-- AUTO-TIMESTAMP: .* -->$' "$README"; then
   sed -i "s/^<!-- AUTO-TIMESTAMP: .* -->$/<!-- AUTO-TIMESTAMP: ${TS} -->/" "$README"
 else
