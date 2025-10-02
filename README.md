@@ -21,7 +21,7 @@ trap cleanup EXIT
 cd "$TMPDIR"
 
 # clone (shallow)
-g
+git clone --depth 1 "$REPO_URL" repo
 cd repo
 
 # create new branch
