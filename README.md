@@ -1,4 +1,4 @@
-#!/usr/bin
+#
 # Usage: ./git-quick-update.sh <git-repo-url>
 # Example: ./git-quick-update.sh git@github.com:username/repo.git
 set -euo pipefail
