@@ -24,7 +24,7 @@ cd "$TMPDIR"
 git clone --depth 1 "$REPO_URL" repo
 cd repo
 
-# create new branch
+# create new
 TS="$(date -u +"%Y%m%dT%H%M%SZ")"
 BRANCH="${BRANCH_PREFIX}/${TS}"
 git checkout -b "$BRANCH"
