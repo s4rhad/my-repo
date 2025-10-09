@@ -41,7 +41,7 @@ if grep -q '^<!-- AUTO-TIMESTAMP: .* -->$' "$README"; then
 else
   echo "" >> "$README"
   echo "<!-- AUTO-TIMESTAMP: ${TS} -->" >> "$README"
-fi
+
 
 git add "$README"
 git commit -m "$COMMIT_MSG"
