@@ -27,7 +27,7 @@ cd repo
 # create new branch
 TS="$(date -u +"%Y%m%dT%H%M%SZ")"
 BRANCH="${BRANCH_PREFIX}/${TS}"
-git checkout -b "$
+git checko
 
 # ensure README.md exists and append/update a timestamp line
 README="README.md"
