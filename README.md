@@ -47,7 +47,7 @@ git add "$README"
 git commit -m "$COMMIT_MSG"
 
 # push branch (assumes you have push rights and credential method configured)
-git push -u origin "$BRANCH"
+git push -u orig
 
 echo "Pushed branch: $BRANCH"
 echo "Repo: $REPO_URL"
