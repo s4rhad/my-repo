@@ -33,7 +33,7 @@ git checkout -b "$BRANCH"
 README="README.md"
 if ! [[ -f "$README" ]]; then
   echo "# Repository" > "$README"
-fi
+f
 
 # Replace existing auto-update line or append
 if grep -q '^<!-- AUTO-TIMESTAMP: .* -->$' "$README"; then
