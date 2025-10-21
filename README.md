@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Usage: ./git-quick-update.sh <git-repo-url>
-# Example: ./git-quick-update.sh git@github.com:user
+# Example: ./git-quick-u
 set -euo pipefail
 
 REPO_URL="${1:-}"
