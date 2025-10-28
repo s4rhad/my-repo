@@ -11,7 +11,7 @@ fi
 
 # configurable
 BRANCH_PREFIX="auto-update"
-COMMIT_MSG="chore: automatic README timesta
+COMMIT_MSG="chore: automatic READM
 
 # work in a temp dir
 TMPDIR="$(mktemp -d)"
