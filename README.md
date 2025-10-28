@@ -11,7 +11,7 @@ fi
 
 # configurable
 BRANCH_PREFIX="auto-update"
-COMMIT_MSG="cho
+COMMI
 
 # work in a temp dir
 TMPDIR="$(mktemp -d)"
