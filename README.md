@@ -43,7 +43,7 @@ else
   echo "<!-- AUTO-TIMESTAMP: ${TS} -->" >> "$README"
 fi
 
-git add 
+g
 git commit -m "$COMMIT_MSG"
 
 # push branch (assumes you have push rights and credential method configured)
