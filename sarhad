@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# Script: git-auto-pr.sh
+# هدف: ایجاد خودکار Pull Request در گیت‌هاب با تغییرات ساده
+set -euo pipefail
+
+REPO_URL="${1:-}"
+if [[ -z "$REPO_URL" ]]; then
+  echo "Usage: $0 <git-repo-url>"
+  exit 1
+fi
+
+BRANCH_NAME="update-$(date +%s)"
+COMMIT_MSG="chore: auto PR test $(date -u +"%Y-%m-%d %H:%M:%S")"
+
+TMPDIR="$(mktemp -d)"
+trap "rm -rf $TMPDIR" EXIT
+cd "$TMPDIR"
+
+git clone --depth 1 "$REPO_URL" repo
+cd repo
+
+git checkout -b "$BRANCH_NAME"
+
+echo "Auto update at $(date -u)" >> auto-update.log
+
+git add auto-update.log
+git commit -m "$COMMIT_MSG"
+git push origin "$BRANCH_NAME"
+
+REPO_API="$(echo "$REPO_URL" | sed 's/git@github.com:/https:\/\/api.github.com\/repos\//; s/\.git$//')"
+TITLE="Auto Pull Request - $(date -u +"%Y-%m-%d %H:%M:%S")"
+BODY="This PR was created automatically by git-auto-pr.sh"
+
+echo "Creating Pull Request..."
+curl -s -X POST -H "Authorization: token ${GITHUB_TOKEN:-}" \
+     -d "{\"title\":\"$TITLE\",\"head\":\"$BRANCH_NAME\",\"base\":\"main\",\"body\":\"$BODY\"}" \
+     "$REPO_API/pulls"
+
+echo "✅ Pull Request created from branch: $BRANCH_NAME"
