@@ -25,7 +25,7 @@ echo "Auto update at $(date -u)" >> auto-update.log
 
 git add auto-update.log
 git commit -m "$COMMIT_MSG"
-git push origin "$BRANCH_NAME"
+git push origin 
 
 REPO_API="$(echo "$REPO_URL" | sed 's/git@github.com:/https:\/\/api.github.com\/repos\//; s/\.git$//')"
 TITLE="Auto Pull Request - $(date -u +"%Y-%m-%d %H:%M:%S")"
