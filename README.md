@@ -44,7 +44,7 @@ else
 fi
 
 git add "$README"
-git commit -m 
+git commit -m "$COMMIT_MSG"
 
 # push branch (assumes you have push rights and credential method configured)
 git push -u origin "$BRANCH"
