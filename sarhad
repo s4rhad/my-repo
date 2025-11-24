@@ -13,7 +13,7 @@ BRANCH_NAME="update-$(date +%s)"
 COMMIT_MSG="chore: auto PR test $(date -u +"%Y-%m-%d %H:%M:%S")"
 
 TMPDIR="$(mktemp -d)"
-trap "rm -rf $TMPDIR" EXIT
+trap "rm -rf $TMPDIR
 cd "$TMPDIR"
 
 git clone --depth 1 "$REPO_URL" repo
