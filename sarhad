@@ -16,7 +16,7 @@ TMPDIR="$(mktemp -d)"
 trap "rm -rf $TMPDIR" EXIT
 cd "$TMPDIR"
 
-git 
+git clone --depth 1 "$REPO_URL" repo
 cd repo
 
 git checkout -b "$BRANCH_NAME"
