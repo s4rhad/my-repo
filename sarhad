@@ -3,7 +3,7 @@
 # هدف: ایجاد خودکار Pull Request در گیت‌هاب با تغییرات ساده
 set -euo pipefail
 
-REPO_URL="${1
+REPO
 if [[ -z "$REPO_URL" ]]; then
   echo "Usage: $0 <git-repo-url>"
   exit 1
