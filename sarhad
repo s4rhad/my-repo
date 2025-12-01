@@ -36,4 +36,4 @@ curl -s -X POST -H "Authorization: token ${GITHUB_TOKEN:-}" \
      -d "{\"title\":\"$TITLE\",\"head\":\"$BRANCH_NAME\",\"base\":\"main\",\"body\":\"$BODY\"}" \
      "$REPO_API/pulls"
 
-echo "✅ Pull Request created from branch: $BRANCH_NAME"
+echo "✅ Pull Request created from branch: 
