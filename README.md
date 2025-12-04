@@ -18,7 +18,7 @@ TMPDIR="$(mktemp -d)"
 cleanup() { rm -rf "$TMPDIR"; }
 trap cleanup EXIT
 
-cd "$TMPDIR"
+cd "$TMPD
 
 # clone (shallow)
 git clone --depth 1 "$REPO_URL" repo
