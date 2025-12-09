@@ -29,7 +29,7 @@ git push origin "$BRANCH_NAME"
 
 REPO_API="$(echo "$REPO_URL" | sed 's/git@github.com:/https:\/\/api.github.com\/repos\//; s/\.git$//')"
 TITLE="Auto Pull Request - $(date -u +"%Y-%m-%d %H:%M:%S")"
-BODY="This PR was created automatically
+BODY="This PR was created 
 
 echo "Creating Pull Request..."
 curl -s -X POST -H "Authorization: token ${GITHUB_TOKEN:-}" \
