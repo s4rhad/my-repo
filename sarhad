@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script: git-auto-pr.sh
 # هدف: ایجاد خودکار Pull Request در گیت‌هاب با تغییرات ساده
-s
+set -euo pipefail
 
 REPO_URL="${1:-}"
 if [[ -z "$REPO_URL" ]]; then
