@@ -31,7 +31,7 @@ REPO_API="$(echo "$REPO_URL" | sed 's/git@github.com:/https:\/\/api.github.com\/
 TITLE="Auto Pull Request - $(date -u +"%Y-%m-%d %H:%M:%S")"
 BODY="This PR was created automatically by git-auto-pr.sh"
 
-echo "Creating Pull Request
+echo "Creating P
 curl -s -X POST -H "Authorization: token ${GITHUB_TOKEN:-}" \
      -d "{\"title\":\"$TITLE\",\"head\":\"$BRANCH_NAME\",\"base\":\"main\",\"body\":\"$BODY\"}" \
      "$REPO_API/pulls"
