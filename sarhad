@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr
 # Script: git-auto-pr.sh
 # هدف: ایجاد خودکار Pull Request در گیت‌هاب با تغییرات ساده
 set -euo pipefail
