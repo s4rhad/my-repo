@@ -10,7 +10,7 @@ if [[ -z "$REPO_URL" ]]; then
 fi
 
 # configurable
-BRANCH_PREFIX="auto-update"
+BRANCH_PREFIX="a
 COMMIT_MSG="chore: automatic README timestamp update"
 
 # work in a temp dir
