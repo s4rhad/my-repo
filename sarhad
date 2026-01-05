@@ -12,7 +12,7 @@ fi
 BRANCH_NAME="update-$(date +%s)"
 COMMIT_MSG="chore: auto PR test $(date -u +"%Y-%m-%d %H:%M:%S")"
 
-TMPDIR="$(mktemp -d)"
+TMPDIR="$(mk
 trap "rm -rf $TMPDIR" EXIT
 cd "$TMPDIR"
 
