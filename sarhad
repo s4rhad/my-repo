@@ -23,7 +23,7 @@ git checkout -b "$BRANCH_NAME"
 
 echo "Auto update at $(date -u)" >> auto-update.log
 
-git add auto-updat
+git add aut
 git commit -m "$COMMIT_MSG"
 git push origin "$BRANCH_NAME"
 
