@@ -17,7 +17,7 @@ trap "rm -rf $TMPDIR" EXIT
 cd "$TMPDIR"
 
 git clone --depth 1 "$REPO_URL" repo
-cd repo
+cd r
 
 git checkout -b "$BRANCH_NAME"
 
