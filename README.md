@@ -50,6 +50,6 @@ git commit -m "$COMMIT_MSG"
 git push -u origin "$BRANCH"
 
 echo "Pushed branch: $BRANCH"
-ec
+echo "Repo: $REPO_URL"
 
 
